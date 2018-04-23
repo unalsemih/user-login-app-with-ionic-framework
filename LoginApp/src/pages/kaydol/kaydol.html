@@ -1,0 +1,39 @@
+<!--
+  Generated template for the KaydolPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Kaydol</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding no-bounce>
+<ion-item style="background-color: black;color: aliceblue; text-align: center">Lütfen Bilgilerinizi Doldurunuz!</ion-item>
+    <ion-item >
+        <ion-label floating>Ad Soyad : </ion-label><ion-input  [(ngModel)]="adSoyad"></ion-input>
+    </ion-item>
+    <ion-item>  
+      <ion-label floating>Kullanıcı Adı : </ion-label><ion-input [(ngModel)]="kullaniciAdi"></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label floating>Sifre : </ion-label><ion-input [(ngModel)]="sifre"></ion-input>
+</ion-item>
+<ion-item>
+<ion-label floating>Sifre (Tekrar) : </ion-label><ion-input [(ngModel)]="sifreTekrar"></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label floating>E-Posta : </ion-label><ion-input [(ngModel)]="ePosta"></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label floating>Telefon : </ion-label><ion-input [(ngModel)]="telefon"></ion-input>
+</ion-item>
+
+<button style="position: fixed; bottom:2%;   left: 10%; right: 10%; width: 80%;" ion-button full (click)="finish()">Kaydol</button><br/>
+</ion-content>
+
